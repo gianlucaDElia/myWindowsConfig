@@ -61,5 +61,5 @@ pacman -S mingw-w64-x86_64-dlib
 
 In stall all in one line:
 ```
-pacman -S mingw-w64-x86_64-toolchain mingw-w64-x86_64-cmake mingw-w64-x86_64-ninja mingw-w64-x86_64-fftw mingw-w64-x86_64-boost mingw-w64-x86_64-leveldb mingw-w64-x86_64-db mingw-w64-x86_64-hdf5 mingw-w64-x86_64-clang mingw-w64-x86_64-clang-tools-extra mingw-w64-x86_64-dlib
+pacman -S mingw-w64-x86_64-toolchain mingw-w64-x86_64-cmake mingw-w64-x86_64-ninja mingw-w64-x86_64-fftw mingw-w64-x86_64-boost mingw-w64-x86_64-leveldb mingw-w64-x86_64-db mingw-w64-x86_64-hdf5 mingw-w64-x86_64-glfw mingw-w64-x86_64-glew mingw-w64-x86_64-glm mingw-w64-x86_64-clang mingw-w64-x86_64-clang-tools-extra mingw-w64-x86_64-dlib
 ```
