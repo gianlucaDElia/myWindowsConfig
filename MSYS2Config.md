@@ -35,6 +35,12 @@ Install glew
 ```
 pacman -S mingw-w64-x86_64-glew
 ```
+
+Install glm
+```
+pacman -S mingw-w64-x86_64-glm
+```
+
 Dbs
 ```
 pacman -S mingw-w64-x86_64-leveldb
