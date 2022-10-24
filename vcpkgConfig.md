@@ -11,3 +11,8 @@ Integrate vcpkg with Visual Studio
 ```
 vcpkg integrate install
 ```
+
+# FFTW
+```
+vcpkg.exe install fftw3[avx2,threads,openmp]:x64-windows
+```
