@@ -14,7 +14,7 @@ vcpkg integrate install
 
 # FFTW
 ```
-vcpkg.exe install fftw3[threads]:x64-windows
+vcpkg.exe install fftw3[threads,avx2]:x64-windows
 ```
 
 fftw3 provides CMake targets:
@@ -50,4 +50,25 @@ vcpkg.exe install berkeleydb:x64-windows
 # Boost
 ```
 vcpkg.exe install boost:x64-windows
+```
+
+# HDF5
+```
+vcpkg.exe install hdf5[cpp,tools,threadsafe]:x64-windows
+```
+```
+# this is heuristically generated, and may not be correct
+    find_package(hdf5 CONFIG REQUIRED)
+    # note: 1 additional targets are not displayed.
+    target_link_libraries(main PRIVATE hdf5::hdf5-shared hdf5::hdf5_hl-shared hdf5::hdf5_cpp-shared hdf5::hdf5_tools-shared)
+```
+
+# Dlib
+```
+vcpkg.exe install dlib[fftw3]:x64-windows
+```
+```
+# this is heuristically generated, and may not be correct
+    find_package(dlib CONFIG REQUIRED)
+    target_link_libraries(main PRIVATE dlib::dlib)
 ```
