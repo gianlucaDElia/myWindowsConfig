@@ -46,7 +46,3 @@ Run the bootstrap script to build vcpkg
 ```
 sudo ./opt/vcpkg/bootstrap-vcpkg.sh
 ```
-### Installing packages
-```
-/opt/vcpkg/vcpkg install fftw3[threads,avx2]:x64-linux leveldb:x64-linux boost:x64-linux hdf5[cpp,tools,threadsafe]:x64-linux dlib[fftw3]:x64-linux
-```
