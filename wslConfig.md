@@ -29,3 +29,10 @@ Install general pachages:
 ```
 sudo apt install build-essential cmake ninja-build vim nvidia-cuda-toolkit
 ```
+
+#vcpkg
+Install general pachages:
+```
+sudo apt install zip unzip pkg-config
+```
+
