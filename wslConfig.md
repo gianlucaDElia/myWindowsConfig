@@ -33,7 +33,7 @@ Uncomment in /etc/inputrc the line: set bell-style none
 
 Install general pachages:
 ```
-sudo apt install build-essential cmake ninja-build gfortran
+sudo apt install build-essential cmake ninja-build gfortran mesa-utils
 ```
 
 ## vcpkg
