@@ -36,6 +36,18 @@ Install general pachages:
 sudo apt install build-essential cmake ninja-build gfortran mesa-utils
 ```
 
+Change t sid. Editi the /etc/apt/source.list
+```
+deb http://deb.debian.org/debian/ unstable main
+deb-src http://deb.debian.org/debian/ unstable main
+```
+then
+```
+sudo apt update
+sudo apt full-upgrade
+```
+
+
 ## vcpkg
 Install general pachages:
 ```
