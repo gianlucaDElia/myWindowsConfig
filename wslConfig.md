@@ -11,7 +11,13 @@ wsl --shutdown
 wsl --update
 ```
 
-Open Ubuntu and update packages:
+Unregister ubuntu and install debian
+```
+wsl --unregister Ubuntu
+wsl --install -d Debian
+```
+
+Open Debian and update packages:
 ```
 sudo apt update
 sudo apt upgrade
