@@ -62,15 +62,21 @@ xlibmesa-glu-dev libglew-dev libftgl-dev \
 libmysqlclient-dev libfftw3-dev libcfitsio-dev \
 graphviz-dev libavahi-compat-libdnssd-dev \
 libldap2-dev python-dev-is-python3 libxml2-dev libkrb5-dev \
-libgsl0-dev qtwebengine5-dev
+libgsl0-dev qtwebengine5-dev liblzma-dev
 ```
 Other libraries suggested by [Gabriele Sirri UNIBO](https://www.unibo.it/sitoweb/gabriele.sirri2/contenuti-utili/df5f946d)
 ```
 sudo apt install libtiff5 x11-apps libtbb-dev libgsl0-dev
 ```
-Then unpack and source
+Build from source
 ```
-tar -xzvf root...
-source /root/bin/thisroot.sh
+git clone --branch latest-stable --depth=1 https://github.com/root-project/root.git root_src
+```
+Create a directroy buildDir inside root_src for building and a directory /opt/root for installation
+```
+cd root_src/buildDir
+cmake -DCMAKE_INSTALL_PREFIX=/opt/root -DCMAKE_CXX_STANDARD=17 -Droot7=ON -Dfftw3=ON -G"Ninja" ..
+sudo ninja
+source /opt/root/bin/thisroot.sh
 ```
 add the source command to the end of .bashrc
