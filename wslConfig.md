@@ -29,6 +29,11 @@ Install general pachages:
 sudo apt install build-essential cmake ninja-build gfortran mesa-utils
 ```
 
+Update to the lates Ubuntu. Change lts to normal in /etc/update-manager/release-upgrade then
+```
+sudo do-release-upgrade
+```
+
 
 
 ## vcpkg
