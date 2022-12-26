@@ -77,6 +77,7 @@ Create a directroy buildDir inside root_src for building and a directory /opt/ro
 cd root_src/buildDir
 cmake -DCMAKE_INSTALL_PREFIX=/opt/root -DCMAKE_CXX_STANDARD=17 -Droot7=ON -Dfftw3=ON -G"Ninja" ..
 sudo ninja
+sudo cmake --build . --target install
 source /opt/root/bin/thisroot.sh
 ```
 add the source command to the end of .bashrc
