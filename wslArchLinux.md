@@ -25,3 +25,12 @@ Set default user
 ```
 ./Arch.exe config --default-user gian
 ```
+
+Install base-devel
+```
+pacman -S base-devel
+```
+if error of fakeroot-tcp
+```
+pacman -R fakeroot-tcp
+```
