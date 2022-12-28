@@ -26,9 +26,9 @@ Set default user
 ./Arch.exe config --default-user gian
 ```
 
-Install base-devel
+Install base-devel and general packages
 ```
-pacman -S base-devel
+pacman -S base-devel git cmake ninja wget zip unzip
 ```
 if error of fakeroot-tcp
 ```
