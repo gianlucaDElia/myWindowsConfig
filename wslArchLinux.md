@@ -28,7 +28,7 @@ Set default user
 
 Install base-devel and general packages
 ```
-pacman -S base-devel git cmake ninja wget zip unzip
+pacman -S base-devel gcc-fortran git cmake ninja wget zip unzip
 ```
 if error of fakeroot-tcp
 ```
