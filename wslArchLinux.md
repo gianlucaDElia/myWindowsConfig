@@ -34,3 +34,9 @@ if error of fakeroot-tcp
 ```
 pacman -R fakeroot-tcp
 ```
+
+
+## Bashrc configuration
+Removing green background from folder
+```
+LS_COLORS=$LS_COLORS:'ow=1;34:'; export LS_COLORS
