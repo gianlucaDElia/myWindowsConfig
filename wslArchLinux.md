@@ -40,3 +40,4 @@ pacman -R fakeroot-tcp
 Removing green background from folder
 ```
 LS_COLORS=$LS_COLORS:'ow=1;34:'; export LS_COLORS
+```
