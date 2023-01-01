@@ -35,6 +35,10 @@ if error of fakeroot-tcp
 pacman -R fakeroot-tcp
 ```
 
+Install pacage for copy to windows system clipboard
+```
+pacman -S wl-clipboard
+```
 
 ## Bashrc configuration
 Removing green background from folder
