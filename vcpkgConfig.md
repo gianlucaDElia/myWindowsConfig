@@ -76,3 +76,14 @@ vcpkg.exe install dlib[fftw3]:x64-windows
     find_package(dlib CONFIG REQUIRED)
     target_link_libraries(main PRIVATE dlib::dlib)
 ```
+
+# Vtk
+```
+vcpkg.exe install vtk[opengl]:x64-windows
+```
+```
+# The package vtk provides CMake targets:
+    find_package(VTK REQUIRED)
+    include("${VTK_USE_FILE}")
+    target_link_libraries(main PRIVATE ${VTK_LIBRARIES})
+```
