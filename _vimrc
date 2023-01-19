@@ -34,4 +34,4 @@ set hidden
 set nowrap
 set incsearch
 set scrolloff=8
-set signcolumn=yes
+set signcolumn=no
