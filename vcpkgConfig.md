@@ -76,3 +76,12 @@ vcpkg.exe install dlib[fftw3]:x64-windows
     find_package(dlib CONFIG REQUIRED)
     target_link_libraries(main PRIVATE dlib::dlib)
 ```
+# openBLAS
+```
+vcpkg.exe install openBlas[threads]:x64-windows
+```
+```
+# this is heuristically generated, and may not be correct
+    find_package(OpenBLAS CONFIG REQUIRED)
+    target_link_libraries(main PRIVATE OpenBLAS::OpenBLAS)
+```
