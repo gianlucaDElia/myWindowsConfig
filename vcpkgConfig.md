@@ -67,6 +67,17 @@ vcpkg.exe install hdf5[cpp,tools,threadsafe]:x64-windows
     target_link_libraries(main PRIVATE hdf5::hdf5-shared hdf5::hdf5_hl-shared hdf5::hdf5_cpp-shared hdf5::hdf5_tools-shared)
 ```
 
+# HIGHFIVE
+```
+vcpkg.exe install highfive[boost]:x64-windows
+```
+```
+# this is heuristically generated, and may not be correct
+    find_package(HighFive CONFIG REQUIRED)
+    # note: 1 additional targets are not displayed.
+    target_link_libraries(main PRIVATE libdeps HighFive HighFive_libdeps HighFive_HighFive)
+```
+
 # Dlib
 ```
 vcpkg.exe install dlib[fftw3]:x64-windows
