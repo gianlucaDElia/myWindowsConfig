@@ -96,3 +96,12 @@ vcpkg.exe install openBlas[threads]:x64-windows
     find_package(OpenBLAS CONFIG REQUIRED)
     target_link_libraries(main PRIVATE OpenBLAS::OpenBLAS)
 ```
+# Matplot++
+```
+vcpkg.exe install  matplotplusplus[fftw,blas,jpeg,opengl]:x64-windows
+```
+```
+# this is heuristically generated, and may not be correct
+    find_package(matplot++ CONFIG REQUIRED)
+    target_link_libraries(main PRIVATE Matplot++::cimg std::filesystem Matplot++::matplot Matplot++::nodesoup)
+```
