@@ -89,7 +89,7 @@ vcpkg.exe install dlib[fftw3]:x64-windows
 ```
 # openBLAS
 ```
-vcpkg.exe install openBlas[threads]:x64-windows
+vcpkg.exe install openblas[threads]:x64-windows
 ```
 ```
 # this is heuristically generated, and may not be correct
