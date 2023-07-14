@@ -105,3 +105,12 @@ vcpkg.exe install  matplotplusplus[fftw,blas,jpeg,opengl]:x64-windows
     find_package(matplot++ CONFIG REQUIRED)
     target_link_libraries(main PRIVATE Matplot++::cimg std::filesystem Matplot++::matplot Matplot++::nodesoup)
 ```
+# RapidJSON
+```
+vcpkg.exe install rapidjson:x64-windows
+```
+```
+# this is heuristically generated, and may not be correct
+    find_package(RapidJSON CONFIG REQUIRED)
+    target_link_libraries(main PRIVATE rapidjson)
+```
