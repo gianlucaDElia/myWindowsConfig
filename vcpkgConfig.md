@@ -114,3 +114,13 @@ vcpkg.exe install rapidjson:x64-windows
     find_package(RapidJSON CONFIG REQUIRED)
     target_link_libraries(main PRIVATE rapidjson)
 ```
+# VTK
+```
+vcpkg.exe install vtk[opengl]:x64-windows
+```
+```
+# this is heuristically generated, and may not be correct
+    find_package(VTK REQUIRED)
+    include("${VTK_USE_FILE}")
+    target_link_libraries(main PRIVATE ${VTK_LIBRARIES})
+```
