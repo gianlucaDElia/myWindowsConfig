@@ -18,7 +18,7 @@ cmake -B [build directory] -S . -DCMAKE_TOOLCHAIN_FILE=[path to vcpkg]/scripts/b
 
 # FFTW
 ```
-vcpkg.exe install fftw3[threads,avx2]:x64-windows
+vcpkg.exe install fftw3[avx2,openmp]:x64-windows
 ```
 
 fftw3 provides CMake targets:
