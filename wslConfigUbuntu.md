@@ -21,6 +21,11 @@ Check if nvidia driver is installed and available:
 nvidia-smi
 ```
 
+In case of glx error add to .bashrc
+```
+export GALLIUM_DRIVER=d3d12
+```
+
 Remove bell:
 Uncomment in /etc/inputrc the line: set bell-style none
 
